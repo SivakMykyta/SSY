@@ -1,0 +1,425 @@
+
+GccApplication1.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         00000146  00800200  0000024e  000002c2  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  1 .text         0000024e  00000000  00000000  00000074  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .comment      00000030  00000000  00000000  00000408  2**0
+                  CONTENTS, READONLY
+  3 .note.gnu.avr.deviceinfo 00000040  00000000  00000000  00000438  2**2
+                  CONTENTS, READONLY
+  4 .debug_aranges 00000060  00000000  00000000  00000478  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_info   000017b2  00000000  00000000  000004d8  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_abbrev 00001415  00000000  00000000  00001c8a  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_line   00000498  00000000  00000000  0000309f  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_frame  000000b0  00000000  00000000  00003538  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_str    000009c1  00000000  00000000  000035e8  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_loc    0000012e  00000000  00000000  00003fa9  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_ranges 00000050  00000000  00000000  000040d7  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	99 c0       	rjmp	.+306    	; 0x134 <__ctors_end>
+   2:	00 00       	nop
+   4:	ae c0       	rjmp	.+348    	; 0x162 <__bad_interrupt>
+   6:	00 00       	nop
+   8:	ac c0       	rjmp	.+344    	; 0x162 <__bad_interrupt>
+   a:	00 00       	nop
+   c:	aa c0       	rjmp	.+340    	; 0x162 <__bad_interrupt>
+   e:	00 00       	nop
+  10:	a8 c0       	rjmp	.+336    	; 0x162 <__bad_interrupt>
+  12:	00 00       	nop
+  14:	a6 c0       	rjmp	.+332    	; 0x162 <__bad_interrupt>
+  16:	00 00       	nop
+  18:	a4 c0       	rjmp	.+328    	; 0x162 <__bad_interrupt>
+  1a:	00 00       	nop
+  1c:	a2 c0       	rjmp	.+324    	; 0x162 <__bad_interrupt>
+  1e:	00 00       	nop
+  20:	a0 c0       	rjmp	.+320    	; 0x162 <__bad_interrupt>
+  22:	00 00       	nop
+  24:	9e c0       	rjmp	.+316    	; 0x162 <__bad_interrupt>
+  26:	00 00       	nop
+  28:	9c c0       	rjmp	.+312    	; 0x162 <__bad_interrupt>
+  2a:	00 00       	nop
+  2c:	9a c0       	rjmp	.+308    	; 0x162 <__bad_interrupt>
+  2e:	00 00       	nop
+  30:	98 c0       	rjmp	.+304    	; 0x162 <__bad_interrupt>
+  32:	00 00       	nop
+  34:	96 c0       	rjmp	.+300    	; 0x162 <__bad_interrupt>
+  36:	00 00       	nop
+  38:	94 c0       	rjmp	.+296    	; 0x162 <__bad_interrupt>
+  3a:	00 00       	nop
+  3c:	92 c0       	rjmp	.+292    	; 0x162 <__bad_interrupt>
+  3e:	00 00       	nop
+  40:	90 c0       	rjmp	.+288    	; 0x162 <__bad_interrupt>
+  42:	00 00       	nop
+  44:	8e c0       	rjmp	.+284    	; 0x162 <__bad_interrupt>
+  46:	00 00       	nop
+  48:	8c c0       	rjmp	.+280    	; 0x162 <__bad_interrupt>
+  4a:	00 00       	nop
+  4c:	8a c0       	rjmp	.+276    	; 0x162 <__bad_interrupt>
+  4e:	00 00       	nop
+  50:	88 c0       	rjmp	.+272    	; 0x162 <__bad_interrupt>
+  52:	00 00       	nop
+  54:	86 c0       	rjmp	.+268    	; 0x162 <__bad_interrupt>
+  56:	00 00       	nop
+  58:	84 c0       	rjmp	.+264    	; 0x162 <__bad_interrupt>
+  5a:	00 00       	nop
+  5c:	82 c0       	rjmp	.+260    	; 0x162 <__bad_interrupt>
+  5e:	00 00       	nop
+  60:	80 c0       	rjmp	.+256    	; 0x162 <__bad_interrupt>
+  62:	00 00       	nop
+  64:	7e c0       	rjmp	.+252    	; 0x162 <__bad_interrupt>
+  66:	00 00       	nop
+  68:	7c c0       	rjmp	.+248    	; 0x162 <__bad_interrupt>
+  6a:	00 00       	nop
+  6c:	7a c0       	rjmp	.+244    	; 0x162 <__bad_interrupt>
+  6e:	00 00       	nop
+  70:	78 c0       	rjmp	.+240    	; 0x162 <__bad_interrupt>
+  72:	00 00       	nop
+  74:	76 c0       	rjmp	.+236    	; 0x162 <__bad_interrupt>
+  76:	00 00       	nop
+  78:	74 c0       	rjmp	.+232    	; 0x162 <__bad_interrupt>
+  7a:	00 00       	nop
+  7c:	72 c0       	rjmp	.+228    	; 0x162 <__bad_interrupt>
+  7e:	00 00       	nop
+  80:	70 c0       	rjmp	.+224    	; 0x162 <__bad_interrupt>
+  82:	00 00       	nop
+  84:	6e c0       	rjmp	.+220    	; 0x162 <__bad_interrupt>
+  86:	00 00       	nop
+  88:	6c c0       	rjmp	.+216    	; 0x162 <__bad_interrupt>
+  8a:	00 00       	nop
+  8c:	6a c0       	rjmp	.+212    	; 0x162 <__bad_interrupt>
+  8e:	00 00       	nop
+  90:	68 c0       	rjmp	.+208    	; 0x162 <__bad_interrupt>
+  92:	00 00       	nop
+  94:	66 c0       	rjmp	.+204    	; 0x162 <__bad_interrupt>
+  96:	00 00       	nop
+  98:	64 c0       	rjmp	.+200    	; 0x162 <__bad_interrupt>
+  9a:	00 00       	nop
+  9c:	62 c0       	rjmp	.+196    	; 0x162 <__bad_interrupt>
+  9e:	00 00       	nop
+  a0:	60 c0       	rjmp	.+192    	; 0x162 <__bad_interrupt>
+  a2:	00 00       	nop
+  a4:	5e c0       	rjmp	.+188    	; 0x162 <__bad_interrupt>
+  a6:	00 00       	nop
+  a8:	5c c0       	rjmp	.+184    	; 0x162 <__bad_interrupt>
+  aa:	00 00       	nop
+  ac:	5a c0       	rjmp	.+180    	; 0x162 <__bad_interrupt>
+  ae:	00 00       	nop
+  b0:	58 c0       	rjmp	.+176    	; 0x162 <__bad_interrupt>
+  b2:	00 00       	nop
+  b4:	56 c0       	rjmp	.+172    	; 0x162 <__bad_interrupt>
+  b6:	00 00       	nop
+  b8:	54 c0       	rjmp	.+168    	; 0x162 <__bad_interrupt>
+  ba:	00 00       	nop
+  bc:	52 c0       	rjmp	.+164    	; 0x162 <__bad_interrupt>
+  be:	00 00       	nop
+  c0:	50 c0       	rjmp	.+160    	; 0x162 <__bad_interrupt>
+  c2:	00 00       	nop
+  c4:	4e c0       	rjmp	.+156    	; 0x162 <__bad_interrupt>
+  c6:	00 00       	nop
+  c8:	4c c0       	rjmp	.+152    	; 0x162 <__bad_interrupt>
+  ca:	00 00       	nop
+  cc:	4a c0       	rjmp	.+148    	; 0x162 <__bad_interrupt>
+  ce:	00 00       	nop
+  d0:	48 c0       	rjmp	.+144    	; 0x162 <__bad_interrupt>
+  d2:	00 00       	nop
+  d4:	46 c0       	rjmp	.+140    	; 0x162 <__bad_interrupt>
+  d6:	00 00       	nop
+  d8:	44 c0       	rjmp	.+136    	; 0x162 <__bad_interrupt>
+  da:	00 00       	nop
+  dc:	42 c0       	rjmp	.+132    	; 0x162 <__bad_interrupt>
+  de:	00 00       	nop
+  e0:	40 c0       	rjmp	.+128    	; 0x162 <__bad_interrupt>
+  e2:	00 00       	nop
+  e4:	3e c0       	rjmp	.+124    	; 0x162 <__bad_interrupt>
+  e6:	00 00       	nop
+  e8:	3c c0       	rjmp	.+120    	; 0x162 <__bad_interrupt>
+  ea:	00 00       	nop
+  ec:	3a c0       	rjmp	.+116    	; 0x162 <__bad_interrupt>
+  ee:	00 00       	nop
+  f0:	38 c0       	rjmp	.+112    	; 0x162 <__bad_interrupt>
+  f2:	00 00       	nop
+  f4:	36 c0       	rjmp	.+108    	; 0x162 <__bad_interrupt>
+  f6:	00 00       	nop
+  f8:	34 c0       	rjmp	.+104    	; 0x162 <__bad_interrupt>
+  fa:	00 00       	nop
+  fc:	32 c0       	rjmp	.+100    	; 0x162 <__bad_interrupt>
+  fe:	00 00       	nop
+ 100:	30 c0       	rjmp	.+96     	; 0x162 <__bad_interrupt>
+ 102:	00 00       	nop
+ 104:	2e c0       	rjmp	.+92     	; 0x162 <__bad_interrupt>
+ 106:	00 00       	nop
+ 108:	2c c0       	rjmp	.+88     	; 0x162 <__bad_interrupt>
+ 10a:	00 00       	nop
+ 10c:	2a c0       	rjmp	.+84     	; 0x162 <__bad_interrupt>
+ 10e:	00 00       	nop
+ 110:	28 c0       	rjmp	.+80     	; 0x162 <__bad_interrupt>
+ 112:	00 00       	nop
+ 114:	26 c0       	rjmp	.+76     	; 0x162 <__bad_interrupt>
+ 116:	00 00       	nop
+ 118:	24 c0       	rjmp	.+72     	; 0x162 <__bad_interrupt>
+ 11a:	00 00       	nop
+ 11c:	22 c0       	rjmp	.+68     	; 0x162 <__bad_interrupt>
+ 11e:	00 00       	nop
+ 120:	20 c0       	rjmp	.+64     	; 0x162 <__bad_interrupt>
+ 122:	00 00       	nop
+ 124:	1e c0       	rjmp	.+60     	; 0x162 <__bad_interrupt>
+ 126:	00 00       	nop
+ 128:	1c c0       	rjmp	.+56     	; 0x162 <__bad_interrupt>
+ 12a:	00 00       	nop
+ 12c:	1a c0       	rjmp	.+52     	; 0x162 <__bad_interrupt>
+ 12e:	00 00       	nop
+ 130:	18 c0       	rjmp	.+48     	; 0x162 <__bad_interrupt>
+	...
+
+00000134 <__ctors_end>:
+ 134:	11 24       	eor	r1, r1
+ 136:	1f be       	out	0x3f, r1	; 63
+ 138:	cf ef       	ldi	r28, 0xFF	; 255
+ 13a:	d1 e8       	ldi	r29, 0x81	; 129
+ 13c:	de bf       	out	0x3e, r29	; 62
+ 13e:	cd bf       	out	0x3d, r28	; 61
+ 140:	00 e0       	ldi	r16, 0x00	; 0
+ 142:	0c bf       	out	0x3c, r16	; 60
+
+00000144 <__do_copy_data>:
+ 144:	13 e0       	ldi	r17, 0x03	; 3
+ 146:	a0 e0       	ldi	r26, 0x00	; 0
+ 148:	b2 e0       	ldi	r27, 0x02	; 2
+ 14a:	ee e4       	ldi	r30, 0x4E	; 78
+ 14c:	f2 e0       	ldi	r31, 0x02	; 2
+ 14e:	00 e0       	ldi	r16, 0x00	; 0
+ 150:	0b bf       	out	0x3b, r16	; 59
+ 152:	02 c0       	rjmp	.+4      	; 0x158 <__do_copy_data+0x14>
+ 154:	07 90       	elpm	r0, Z+
+ 156:	0d 92       	st	X+, r0
+ 158:	a6 34       	cpi	r26, 0x46	; 70
+ 15a:	b1 07       	cpc	r27, r17
+ 15c:	d9 f7       	brne	.-10     	; 0x154 <__do_copy_data+0x10>
+ 15e:	70 d0       	rcall	.+224    	; 0x240 <main>
+ 160:	74 c0       	rjmp	.+232    	; 0x24a <_exit>
+
+00000162 <__bad_interrupt>:
+ 162:	4e cf       	rjmp	.-356    	; 0x0 <__vectors>
+
+00000164 <USART_init>:
+	UCSR1C |= (1<<UCSZ11) | (1<<UCSZ10);
+}
+
+void USART_Transmit(uint8_t data) {
+	while (!(UCSR1A & (1<<UDRE1)));
+	UDR1 = data;
+ 164:	90 93 cd 00 	sts	0x00CD, r25	; 0x8000cd <__TEXT_REGION_LENGTH__+0x7c00cd>
+ 168:	80 93 cc 00 	sts	0x00CC, r24	; 0x8000cc <__TEXT_REGION_LENGTH__+0x7c00cc>
+ 16c:	e9 ec       	ldi	r30, 0xC9	; 201
+ 16e:	f0 e0       	ldi	r31, 0x00	; 0
+ 170:	80 81       	ld	r24, Z
+ 172:	88 61       	ori	r24, 0x18	; 24
+ 174:	80 83       	st	Z, r24
+ 176:	ea ec       	ldi	r30, 0xCA	; 202
+ 178:	f0 e0       	ldi	r31, 0x00	; 0
+ 17a:	80 81       	ld	r24, Z
+ 17c:	86 60       	ori	r24, 0x06	; 6
+ 17e:	80 83       	st	Z, r24
+ 180:	08 95       	ret
+
+00000182 <USART_GetChar>:
+}
+
+uint8_t USART_GetChar(void) {
+	while (!(UCSR1A & (1<<RXC1)));
+ 182:	80 91 c8 00 	lds	r24, 0x00C8	; 0x8000c8 <__TEXT_REGION_LENGTH__+0x7c00c8>
+ 186:	88 23       	and	r24, r24
+ 188:	e4 f7       	brge	.-8      	; 0x182 <USART_GetChar>
+	return UDR1;
+ 18a:	80 91 ce 00 	lds	r24, 0x00CE	; 0x8000ce <__TEXT_REGION_LENGTH__+0x7c00ce>
+}
+ 18e:	08 95       	ret
+
+00000190 <UART_SendChar>:
+
+void UART_SendChar(uint8_t data) {
+	while (!(UCSR1A & (1<<UDRE1)));
+ 190:	90 91 c8 00 	lds	r25, 0x00C8	; 0x8000c8 <__TEXT_REGION_LENGTH__+0x7c00c8>
+ 194:	95 ff       	sbrs	r25, 5
+ 196:	fc cf       	rjmp	.-8      	; 0x190 <UART_SendChar>
+	UDR1 = data;
+ 198:	80 93 ce 00 	sts	0x00CE, r24	; 0x8000ce <__TEXT_REGION_LENGTH__+0x7c00ce>
+ 19c:	08 95       	ret
+
+0000019e <UART_SendString>:
+}
+
+void UART_SendString(char *text) {
+ 19e:	cf 93       	push	r28
+ 1a0:	df 93       	push	r29
+ 1a2:	ec 01       	movw	r28, r24
+	while (*text != 0x00) {
+ 1a4:	02 c0       	rjmp	.+4      	; 0x1aa <UART_SendString+0xc>
+		UART_SendChar(*text);
+ 1a6:	f4 df       	rcall	.-24     	; 0x190 <UART_SendChar>
+		text++;
+ 1a8:	21 96       	adiw	r28, 0x01	; 1
+	while (!(UCSR1A & (1<<UDRE1)));
+	UDR1 = data;
+}
+
+void UART_SendString(char *text) {
+	while (*text != 0x00) {
+ 1aa:	88 81       	ld	r24, Y
+ 1ac:	81 11       	cpse	r24, r1
+ 1ae:	fb cf       	rjmp	.-10     	; 0x1a6 <UART_SendString+0x8>
+		UART_SendChar(*text);
+		text++;
+	}
+}
+ 1b0:	df 91       	pop	r29
+ 1b2:	cf 91       	pop	r28
+ 1b4:	08 95       	ret
+
+000001b6 <board_init>:
+
+void board_init() {
+	USART_init(MYUBRR);
+ 1b6:	8c e0       	ldi	r24, 0x0C	; 12
+ 1b8:	90 e0       	ldi	r25, 0x00	; 0
+ 1ba:	d4 cf       	rjmp	.-88     	; 0x164 <USART_init>
+ 1bc:	08 95       	ret
+
+000001be <showMenu>:
+}
+
+void showMenu() {
+    UART_SendString("\033[2J\033[H");  // Clear screen and move cursor to home position
+ 1be:	81 e0       	ldi	r24, 0x01	; 1
+ 1c0:	92 e0       	ldi	r25, 0x02	; 2
+ 1c2:	ed df       	rcall	.-38     	; 0x19e <UART_SendString>
+    UART_SendString("\nSelect an option:\r\n");
+ 1c4:	89 e0       	ldi	r24, 0x09	; 9
+ 1c6:	92 e0       	ldi	r25, 0x02	; 2
+ 1c8:	ea df       	rcall	.-44     	; 0x19e <UART_SendString>
+    UART_SendString("1. Show A (Pismeno)\r\n");
+ 1ca:	8e e1       	ldi	r24, 0x1E	; 30
+ 1cc:	92 e0       	ldi	r25, 0x02	; 2
+ 1ce:	e7 df       	rcall	.-50     	; 0x19e <UART_SendString>
+    UART_SendString("2. Show ABCDEFG\r\n");
+ 1d0:	84 e3       	ldi	r24, 0x34	; 52
+ 1d2:	92 e0       	ldi	r25, 0x02	; 2
+ 1d4:	e4 df       	rcall	.-56     	; 0x19e <UART_SendString>
+    UART_SendString("3. Option 3 (Blank)\r\n");
+ 1d6:	86 e4       	ldi	r24, 0x46	; 70
+ 1d8:	92 e0       	ldi	r25, 0x02	; 2
+ 1da:	e1 df       	rcall	.-62     	; 0x19e <UART_SendString>
+    UART_SendString("4. Option 4 (Blank)\r\n");
+ 1dc:	8c e5       	ldi	r24, 0x5C	; 92
+ 1de:	92 e0       	ldi	r25, 0x02	; 2
+ 1e0:	de df       	rcall	.-68     	; 0x19e <UART_SendString>
+    UART_SendString("5. Refresh\n");
+ 1e2:	82 e7       	ldi	r24, 0x72	; 114
+ 1e4:	92 e0       	ldi	r25, 0x02	; 2
+ 1e6:	db cf       	rjmp	.-74     	; 0x19e <UART_SendString>
+ 1e8:	08 95       	ret
+
+000001ea <handleMenuOption>:
+ 1ea:	83 33       	cpi	r24, 0x33	; 51
+}
+
+
+
+void handleMenuOption(uint8_t option) {
+    switch (option) {
+ 1ec:	c9 f0       	breq	.+50     	; 0x220 <handleMenuOption+0x36>
+ 1ee:	28 f4       	brcc	.+10     	; 0x1fa <handleMenuOption+0x10>
+ 1f0:	81 33       	cpi	r24, 0x31	; 49
+ 1f2:	41 f0       	breq	.+16     	; 0x204 <handleMenuOption+0x1a>
+ 1f4:	82 33       	cpi	r24, 0x32	; 50
+ 1f6:	69 f0       	breq	.+26     	; 0x212 <handleMenuOption+0x28>
+ 1f8:	1f c0       	rjmp	.+62     	; 0x238 <handleMenuOption+0x4e>
+ 1fa:	84 33       	cpi	r24, 0x34	; 52
+ 1fc:	a9 f0       	breq	.+42     	; 0x228 <handleMenuOption+0x3e>
+ 1fe:	85 33       	cpi	r24, 0x35	; 53
+ 200:	b9 f0       	breq	.+46     	; 0x230 <handleMenuOption+0x46>
+ 202:	1a c0       	rjmp	.+52     	; 0x238 <handleMenuOption+0x4e>
+        case '1':
+            UART_SendString("You selected Option 1: Show A (Pismeno)\n");
+ 204:	8e e7       	ldi	r24, 0x7E	; 126
+ 206:	92 e0       	ldi	r25, 0x02	; 2
+ 208:	ca df       	rcall	.-108    	; 0x19e <UART_SendString>
+            UART_SendChar(textt);
+ 20a:	80 91 00 02 	lds	r24, 0x0200	; 0x800200 <__data_start>
+ 20e:	c0 cf       	rjmp	.-128    	; 0x190 <UART_SendChar>
+            break;
+ 210:	08 95       	ret
+        case '2':
+            UART_SendString("You selected Option 2: Show ABCDEFG\n");
+ 212:	87 ea       	ldi	r24, 0xA7	; 167
+ 214:	92 e0       	ldi	r25, 0x02	; 2
+ 216:	c3 df       	rcall	.-122    	; 0x19e <UART_SendString>
+            UART_SendString("ABCDEFG\n");
+ 218:	83 ec       	ldi	r24, 0xC3	; 195
+ 21a:	92 e0       	ldi	r25, 0x02	; 2
+ 21c:	c0 cf       	rjmp	.-128    	; 0x19e <UART_SendString>
+            break;
+ 21e:	08 95       	ret
+        case '3':
+            UART_SendString("You selected Option 3: (Blank)\n");
+ 220:	8c ec       	ldi	r24, 0xCC	; 204
+ 222:	92 e0       	ldi	r25, 0x02	; 2
+ 224:	bc cf       	rjmp	.-136    	; 0x19e <UART_SendString>
+            break;
+ 226:	08 95       	ret
+        case '4':
+            UART_SendString("You selected Option 4: (Blank)\n");
+ 228:	8c ee       	ldi	r24, 0xEC	; 236
+ 22a:	92 e0       	ldi	r25, 0x02	; 2
+ 22c:	b8 cf       	rjmp	.-144    	; 0x19e <UART_SendString>
+            break;
+ 22e:	08 95       	ret
+        case '5':
+            UART_SendString("Refreshing the menu...\n");
+ 230:	8c e0       	ldi	r24, 0x0C	; 12
+ 232:	93 e0       	ldi	r25, 0x03	; 3
+ 234:	b4 cf       	rjmp	.-152    	; 0x19e <UART_SendString>
+            break;
+ 236:	08 95       	ret
+        default:
+            UART_SendString("Invalid option, try again.\n");
+ 238:	84 e2       	ldi	r24, 0x24	; 36
+ 23a:	93 e0       	ldi	r25, 0x03	; 3
+ 23c:	b0 cf       	rjmp	.-160    	; 0x19e <UART_SendString>
+ 23e:	08 95       	ret
+
+00000240 <main>:
+ 240:	ba df       	rcall	.-140    	; 0x1b6 <board_init>
+
+int main(void) {
+    board_init();
+    
+    while(1) {
+        showMenu();
+ 242:	bd df       	rcall	.-134    	; 0x1be <showMenu>
+        uint8_t option = USART_GetChar();
+ 244:	9e df       	rcall	.-196    	; 0x182 <USART_GetChar>
+ 246:	d1 df       	rcall	.-94     	; 0x1ea <handleMenuOption>
+        handleMenuOption(option);
+ 248:	fc cf       	rjmp	.-8      	; 0x242 <main+0x2>
+
+0000024a <_exit>:
+ 24a:	f8 94       	cli
+
+0000024c <__stop_program>:
+ 24c:	ff cf       	rjmp	.-2      	; 0x24c <__stop_program>
